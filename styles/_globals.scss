@@ -1,0 +1,20 @@
+*,
+*::before,
+*:after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+}
+div[data-overlay-container="true"] {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
