@@ -1,0 +1,6 @@
+.leftMenuWrapper {
+  display: flex;
+  @include adminflexColumn($baseAdminLeftMenuWidth);
+  background: map-get($theme-colors, "adminDarkBlue");
+  color: #fff;
+}

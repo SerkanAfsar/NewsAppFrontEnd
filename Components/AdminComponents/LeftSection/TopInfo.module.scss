@@ -1,0 +1,52 @@
+.topInfo {
+  @include adminflexColumn(none);
+  display: flex;
+  align-self: unset;
+  width: 100%;
+  &__topSection {
+    background: map-get($theme-colors, "adminDark");
+    height: $adminTopMenuHeight;
+    box-shadow: $adminTopMenuBoxShadow;
+    padding: 10px;
+    color: #fff;
+    @include flexCenter($widthFull: true);
+    position: sticky;
+    position: -webkit-sticky;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+  }
+  &__bottomContent {
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+    @include adminflexColumn($basis: none, $direction: row);
+    .img {
+      flex: 1;
+    }
+    .info {
+      flex: 1;
+      @include adminflexColumn($basis: none, $gap: 10px);
+      b {
+        font-size: 11px;
+        @include flexCenter;
+        &::before {
+          left: 0px;
+          top: 0px;
+          content: "";
+          width: 10px;
+          height: 10px;
+          display: block;
+          border-radius: 50%;
+          background: green;
+          margin-right: 10px;
+        }
+      }
+      span {
+        display: inline-block;
+        font-size: 14px;
+        position: relative;
+      }
+    }
+  }
+}

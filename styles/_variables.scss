@@ -1,3 +1,11 @@
 $theme-colors: (
   "adminBlue": #2148c0,
+  "adminDark": #000,
+  "adminDarkBlue": #222d32,
+  "panelMenuColor": #1a2226,
+  "panelMenuActiveColor": #1e282c,
 );
+
+$baseAdminLeftMenuWidth: 300px;
+$adminTopMenuBoxShadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+$adminTopMenuHeight: 50px;

@@ -1,0 +1,5 @@
+.wrapper {
+  @include adminflexColumn(auto);
+
+  width: 100%;
+}
