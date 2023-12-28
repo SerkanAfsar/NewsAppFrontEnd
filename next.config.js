@@ -1,9 +1,9 @@
 const path = require("path");
 const nextConfig = {
-  //   experimental: {
-  //     appDir: true,
-  //     serverActions: true,
-  //   },
+  // experimental: {
+  //   appDir: true,
+  //   serverActions: true,
+  // },
 
   sassOptions: {
     includePaths: [

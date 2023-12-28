@@ -18,3 +18,27 @@ div[data-overlay-container="true"] {
   padding: 0px;
   height: 100%;
 }
+
+button {
+  border: none;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
