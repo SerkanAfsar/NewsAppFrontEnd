@@ -2,8 +2,9 @@ import styles from "./index.module.scss";
 import LoginLayout from "../LoginLayout";
 import LeftMenuWrapper from "./LeftMenuWrapper";
 import RightSectionWrapper from "./RightSectionWrapper";
+import { memo } from "react";
 
-export default function AdminLayout({ children, isLogin = false }) {
+const AdminLayout = ({ children, isLogin = false }) => {
   if (isLogin) {
     return <LoginLayout>{children}</LoginLayout>;
   }
@@ -13,4 +14,5 @@ export default function AdminLayout({ children, isLogin = false }) {
       <RightSectionWrapper>{children}</RightSectionWrapper>
     </div>
   );
-}
+};
+export default memo(AdminLayout);

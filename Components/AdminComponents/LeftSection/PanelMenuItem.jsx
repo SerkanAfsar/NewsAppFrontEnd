@@ -5,6 +5,7 @@ export default function PanelMenuItem({
   url,
   isActive,
   isFirst = false,
+  icon,
   ...rest
 }) {
   if (isFirst) {
@@ -16,8 +17,17 @@ export default function PanelMenuItem({
         isActive ? `${styles.item} ${styles.active}` : `${styles.item}`
       }
     >
-      <Link href={url} title={title}>
-        {title}
+      <Link
+        href={url}
+        onClick={(e) => {
+          if (rest.handleClick) {
+            e.preventDefault();
+            rest.handleClick();
+          }
+        }}
+        title={title}
+      >
+        {icon} {title}
       </Link>
     </li>
   );
