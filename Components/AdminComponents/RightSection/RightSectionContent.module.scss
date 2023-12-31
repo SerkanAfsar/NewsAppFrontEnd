@@ -1,0 +1,16 @@
+.wrapper {
+  position: relative;
+  border-radius: 3px;
+  background: #fff;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+  width: calc(100% - 40px);
+  padding: 10px;
+  justify-self: stretch;
+  flex: auto;
+
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}

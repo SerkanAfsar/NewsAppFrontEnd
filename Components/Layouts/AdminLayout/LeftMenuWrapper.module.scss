@@ -1,6 +1,16 @@
 .leftMenuWrapper {
-  display: flex;
   @include adminflexColumn($baseAdminLeftMenuWidth);
   background: map-get($theme-colors, "adminDarkBlue");
   color: #fff;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  position: sticky;
+  position: -webkit-sticky;
+  height: 100vh;
+  inset: 0px;
+  bottom: 0px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
