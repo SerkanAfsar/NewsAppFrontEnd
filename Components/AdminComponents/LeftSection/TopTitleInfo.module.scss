@@ -1,0 +1,12 @@
+.wrapper {
+  background: map-get($theme-colors, "adminDark");
+  height: $adminTopMenuHeight;
+  box-shadow: $adminTopMenuBoxShadow;
+  padding: 15px 10px;
+  color: #fff;
+  @include flexCenter($widthFull: true);
+  position: sticky;
+  position: -webkit-sticky;
+  inset: 0px;
+  z-index: 10;
+}

@@ -3,6 +3,7 @@
 import AdminLayout from "@/Components/Layouts/AdminLayout";
 import ClientLayout from "@/Components/Layouts/ClientLayout";
 import { usePathname } from "next/navigation";
+import { AdminContext } from "@/Contexts/AdminContext";
 
 export default function LayoutProvider({ children }) {
   const pathName = usePathname();

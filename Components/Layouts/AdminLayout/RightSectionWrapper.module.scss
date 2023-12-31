@@ -1,5 +1,5 @@
 .wrapper {
   @include adminflexColumn(auto);
-
   width: 100%;
+  background: map-get($theme-colors, "panelGrayColor");
 }

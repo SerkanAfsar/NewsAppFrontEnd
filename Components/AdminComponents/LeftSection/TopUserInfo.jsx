@@ -1,8 +1,7 @@
-import styles from "./TopInfo.module.scss";
-export default function TopInfo({ title, image, userName, ...rest }) {
+import styles from "./TopUserInfo.module.scss";
+export default function TopUserInfo({ title, image, userName, ...rest }) {
   return (
     <div className={styles.topInfo}>
-      <div className={styles.topInfo__topSection}>Yönetim Paneli</div>
       <div className={styles.topInfo__bottomContent}>
         <div className={styles.img}>Deneme 1</div>
         <div className={styles.info}>
